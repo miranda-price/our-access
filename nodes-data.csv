@@ -1,0 +1,127 @@
+﻿Building,Level,ID,Edges,Steps,Stairs,Manual Door,Non WC Elevator,ADA,Type,Lat,Long
+Burton,0,BR00A,,no,no,yes,no,no,entrance,43.1293665,-77.6313923
+Burton,1,BR01A,,yes,no,yes,no,no,entrance,43.129296,-77.6311965
+Burton,1,BR01B,,yes,no,yes,no,no,entrance,43.1292627,-77.6313306
+Burton,1,BR01C,,yes,no,yes,no,no,entrance,43.129204,-77.6314433
+Burton,0,BR00,,no,no,yes,no,no,floor,,
+Burton,1,BR01,,yes,no,yes,no,no,floor,,
+Burton,2,BR02,,no,yes,yes,no,no,floor,,
+Burton,3,BR03,,no,yes,yes,no,no,floor,,
+Rettner,1,RT01A,,no,no,no,no,yes,entrance,43.1286775,-77.630216
+Rettner,1,RT01B,,no,no,yes,no,no,entrance,43.1284505,-77.6299049
+Rettner,1,RT01C,,no,no,no,no,yes,entrance,43.1283643,-77.6301248
+Rettner,1,RT01,,no,no,no,no,yes,floor,,
+Rettner,2,RT02,,no,no,no,no,yes,floor,,
+Rettner,3,RT03,,no,no,no,no,yes,floor,,
+Morey,2,MR02A,,no,no,no,no,yes,entrance,43.1284964,-77.6293734
+Morey,2,MR02B,,no,no,no,no,yes,entrance,43.128263,-77.6300103
+Morey,3,MR03A,,no,no,no,no,yes,entrance,43.1284459,-77.6294641
+Morey,3,MR03B,,yes,no,yes,no,no,entrance,43.1283587,-77.6296534
+Morey,3,MR03C,,yes,no,yes,no,no,entrance,43.1283023,-77.6298476
+Morey,G,MRG,,no,no,no,no,yes,floor,,
+Morey,1,MR01,,no,no,no,no,yes,floor,,
+Morey,2,MR02,,no,no,no,no,yes,floor,,
+Morey,3,MR03,,no,no,no,no,yes,floor,,
+Morey,4,MR04,,no,no,no,no,yes,floor,,
+Morey,5,MR05,,no,no,no,no,yes,floor,,
+Rush Rhees,G,RRGA,,no,no,no,no,yes,entrance,43.1287284,-77.6279537
+Rush Rhees,G,RRGB,,yes,yes,yes,no,no,entrance,43.1281014,-77.6287809
+Rush Rhees,G,RRGC,,no,no,no,no,yes,entrance,43.1285151,-77.6290934
+Rush Rhees,1,RR01A,,no,no,no,no,no,entrance,43.128743,-77.6286939
+Rush Rhees,1,RR01B,,yes,yes,no,no,no,entrance,43.1283107,-77.6289446
+Rush Rhees,G,RRG,,no,no,no,no,yes,floor,,
+Rush Rhees,1,RR01,,no,no,no,no,yes,floor,,
+Rush Rhees,2,RR02,,no,no,no,no,yes,floor,,
+Rush Rhees,3,RR03,,no,no,no,no,yes,floor,,
+Rush Rhees,4,RR04,,no,no,no,no,yes,floor,,
+Eastman Quad,,EQPA,,no,no,no,no,yes,intersection,43.1282524,-77.6298131
+Eastman Quad,,EQPB,,no,no,no,no,yes,intersection,43.1283214,-77.6296242
+Eastman Quad,,EQPC,,no,no,no,no,yes,intersection,43.1283983,-77.6294316
+Eastman Quad,,EQPD,,no,no,no,no,yes,intersection,43.1282604,-77.6290755
+Eastman Quad,,EQPE,,no,no,no,no,yes,intersection,43.1284752,-77.6292172
+Eastman Quad,,EQPF,,no,no,no,no,yes,intersection,43.1280535,-77.6289301
+Eastman Quad,,EQPG,,no,no,no,no,yes,intersection,43.1279103,-77.6293189
+Wilson Quad,,WQPA,,no,no,no,no,yes,intersection,43.1291189,-77.6313241
+Wilson Quad,,WQPB,,no,no,no,no,yes,intersection,43.1291711,-77.6311815
+Wilson Quad,,WQPC,,no,no,no,no,yes,intersection,43.1289216,-77.6306342
+Wilson Quad,,WQPD,,no,no,no,no,yes,intersection,43.1292818,-77.6308716
+Wilson Quad,,WQPE,,no,no,no,no,yes,intersection,43.1290393,-77.6315472
+Wilson Quad,,WQPF,,no,no,no,no,yes,intersection,43.1286759,-77.6312982
+Wilson Quad,,WQPG,,no,no,no,no,yes,intersection,43.1285042,-77.6303344
+Wilson Quad,,WQPH,,no,no,no,no,yes,intersection,43.1283342,-77.6302145
+Bausch & Lomb,1,BL01,,no,no,no,no,yes,floor,,
+Bausch & Lomb,2,BL02,,no,no,no,no,yes,floor,,
+Bausch & Lomb,3,BL03,,no,no,no,no,yes,floor,,
+Bausch & Lomb,4,BL04,,no,no,no,no,yes,floor,,
+Bausch & Lomb,5,BL05,,yes,yes,no,no,no,floor,,
+Bausch & Lomb,1,BL01A,,no,no,no,no,yes,entrance,43.1277064,-77.6296434
+Bausch & Lomb,1,BL01B,,yes,yes,yes,no,no,entrance,43.1279416,-77.6290303
+Bausch & Lomb,1,BL01C,,yes,yes,yes,no,no,entrance,43.1274095,-77.6291748
+Bausch & Lomb,2,BL02A,,no,no,no,no,yes,entrance,43.1278652,-77.6292931
+Dewey,B,DWB,,no,no,no,yes,no,floor,,
+Dewey,1,DW01,,no,no,no,no,yes,floor,,
+Dewey,2,DW02,,no,no,no,no,yes,floor,,
+Dewey,3,DW03,,no,no,no,no,yes,floor,,
+Dewey,4,DW04,,no,no,no,no,yes,floor,,
+Dewey,5,DW05,,no,no,no,no,yes,floor,,
+Dewey,1,DW01A,,no,no,no,no,yes,entrance,43.1276196,-77.6298712
+Dewey,1,DW01B,,no,no,yes,no,no,entrance,43.1272197,-77.629882
+Dewey,1,DW01C,,yes,yes,yes,no,no,entrance,43.1268608,-77.6297776
+Dewey,1,DW01D,,no,no,no,no,yes,entrance,43.1272231,-77.6302223
+Dewey,2,DW02A,,no,no,no,no,yes,entrance,43.1275255,-77.6302473
+Hoyt,1,HT01,,no,no,no,no,yes,floor,,
+Hoyt,2,HT02,,no,no,no,no,yes,floor,,
+Hoyt,1,HT01A,,no,no,no,no,yes,entrance,43.1274836,-77.629653
+Hoyt,1,HT01B,,no,no,no,no,yes,entrance,43.127635,-77.6296616
+Hoyt,1,HT01C,,no,no,no,no,yes,entrance,43.1273452,-77.6294097
+Hoyt,1,HT01D,,no,no,no,no,yes,entrance,43.1272815,-77.6296
+Hoyt,1,HT01E,,no,no,no,no,yes,entrance,43.1274348,-77.629703
+Hoyt,1,HT01F,,no,no,no,no,yes,entrance,43.1274637,-77.6296951
+Hoyt,2,HT02A,,no,no,no,no,yes,entrance,43.1276141,-77.6297259
+Lattimore,1,LT01,,no,no,no,no,yes,floor,,
+Lattimore,2,LT02,,no,no,no,no,yes,floor,,
+Lattimore,3,LT03,,no,no,no,no,yes,floor,,
+Lattimore,4,LT04,,no,no,no,yes,no,floor,,
+Lattimore,5,LT05,,no,no,no,yes,no,floor,,
+Lattimore,1,LT01A,,no,no,no,no,yes,entrance,43.1280781,-77.6308432
+Lattimore,2,LT02A,,no,no,no,no,yes,entrance,43.1281765,-77.6302765
+Lattimore,3,LT03A,,no,no,no,no,yes,entrance,43.1280116,-77.6305737
+Interfaith Chapel,1,IF01,,no,no,no,no,yes,floor,,
+Interfaith Chapel,2,IF02,,no,no,no,no,yes,floor,,
+Interfaith Chapel,3,IF03,,no,no,no,no,yes,floor,,
+Interfaith Chapel,1,IF01A,,no,no,yes,no,no,entrance,43.126896,-77.6323981
+Interfaith Chapel,1,IF01B,,no,no,yes,no,no,entrance,43.1270725,-77.632517
+Interfaith Chapel,3,IF03A,,no,no,no,no,yes,entrance,43.1270898,-77.6321881
+Eastman Quad,,EQPH,,no,no,no,no,yes,intersection,43.127733,-77.6297917
+Eastman Quad,,EQPI,,no,no,no,no,yes,intersection,43.1281471,-77.6300906
+Eastman Quad,,EQPJ,,no,no,no,no,yes,intersection,43.1279743,-77.630548
+Eastman Quad,,EQPK,,no,no,no,no,yes,intersection,43.1275533,-77.6302701
+Eastman Quad,,EQPL,,no,no,no,no,yes,intersection,43.12735,-77.6308183
+Eastman Quad,,EQPM,,no,no,no,no,yes,intersection,43.1275608,-77.6309685
+Eastman Quad,,EQPN,,no,no,no,no,yes,intersection,43.1277695,-77.6311172
+Eastman Quad,,EQPO,,no,no,no,no,yes,intersection,43.1282065,-77.6301582
+Eastman Quad,,EQPP,,no,no,no,no,yes,intersection,43.1276582,-77.6297745
+Eastman Quad,,EQPQ,,no,no,no,no,yes,intersection,43.1272868,-77.6297036
+Eastman Quad,,EQPR,,no,no,no,no,yes,intersection,43.1273606,-77.6293079
+Meliora,1,ML01,,no,no,no,no,yes,floor,,
+Meliora,2,ML02,,no,no,no,no,yes,floor,,
+Meliora,3,ML03,,no,no,no,no,yes,floor,,
+Meliora,4,ML04,,no,no,no,no,yes,floor,,
+Meliora,2,ML02A,,yes,no,yes,no,no,entrance,43.1277552,-77.6287196
+Meliora,2,ML02B,,yes,yes,yes,no,no,entrance,43.1274581,-77.6282562
+Meliora,3,ML03A,,no,no,no,no,yes,entrance,43.1278794,-77.6283018
+Meliora,3,ML03B,,no,no,no,no,yes,entrance,43.1276646,-77.6279163
+Eastman Quad,,EQPS,,no,no,no,no,yes,intersection,43.1274348,-77.6285361
+Eastman Quad,,EQPT,,no,no,no,no,yes,intersection,43.127614,-77.6278789
+Eastman Quad,,EQPU,,no,no,no,no,yes,intersection,43.1280854,-77.6278033
+Eastman Quad,,EQPV,,no,no,no,no,yes,intersection,43.1277656,-77.628706
+Eastman Quad,,EQPW,,no,no,no,no,yes,intersection,43.128022,-77.6288722
+Eastman Quad,,EQPX,,no,no,no,no,yes,intersection,43.1277077,-77.6274823
+Eastman Quad,,EQPY,,no,no,no,no,yes,intersection,43.1284383,-77.6277806
+Eastman Quad,,EQPZ,,no,no,no,no,yes,intersection,43.1273025,-77.6284454
+Eastman Quad,,EQPAA,,no,no,no,no,yes,intersection,43.1270544,-77.6290913
+Eastman Quad,,EQPAB,,no,no,no,no,yes,intersection,43.1269221,-77.6294539
+Eastman Quad,,EQPAC,,no,no,no,no,yes,intersection,43.1273935,-77.6282075
+Eastman Quad,,EQPAD,,no,no,no,no,yes,intersection,43.1278979,-77.628317
+Eastman Quad,,EQPAE,,no,no,no,no,yes,intersection,43.1275754,-77.6277278
+Eastman Quad,,EQPAF,,no,no,no,no,yes,intersection,43.1287332,-77.6279317
