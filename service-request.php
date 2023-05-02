@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>Our Access - Service Request</title>
+        <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="override.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tjw1ebq.css">
+    </head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="#main" class="skip">Skip to main content</a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">
+            <img src="assets/our_access_logo.png" alt="" height="32" class="d-inline-block align-text-top">
+            Our Access
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="map.php">Accessibility Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Service Request</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="disability-resources.php">Disability Resources</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body id="main">
+    <div id="service-form-container">
+        <h1>Service Request</h1>
+        <div id="request-instructions">
+          <p>Fill out this form to send a service request to Facilities and Services at the University of Rochester.  For fire, flood, or other emergencies, please contact the Department of Public Safety at x5-333333 or 585-275-3333.</p>
+          <p>Alternatively, you can email University Facilities & Services at <a href="mailto:faccust@facilities.rochester.edu" target="_blank">faccust@facilities.rochester.edu</a>  to place a service request.  Be sure to include your name, phone number, location, and a description of the request.  You can also call at x3-4567 or 237-4567.</p>
+        </div>
+
+        <p><strong>Note: </strong>Fields marked with a <span style="color: red;">*</span> are <strong>required </strong>fields.</p>
+        <form action="" id="report-form">
+            <h2>Reporter Information</h2>
+            <div class="row g-3" id="reporter-info">
+                <div class="form-floating col-md-4">
+                    <input type="text" autocomplete="name" class="form-control required" id="reporter-name" placeholder="Full Name" required = "true">
+                    <label for="reporter-name"><span style="color: red;">*</span> Full Name</label>
+                </div>
+                <div class="form-floating col-md-4">
+                    <input type="email" autocomplete="email" class="form-control required" id="reporter-email" placeholder="University Email" required = "true" onchange ="validEmail()">
+                    <label for="reporter-email"><span style="color: red;">*</span> University Email</label>
+                    <div id="email-invalid-feedback" class="invalid-feedback" hidden>
+                      Please enter a university email.
+                    </div>
+                </div>
+                <div class="form-floating col-md-4">
+                    <input type="tel" autocomplete="tel" class="form-control required" id="reporter-phone" placeholder="Phone Number" required = "true" onchange="validPhone()">
+                    <label for="reporter-phone"><span style="color: red;">*</span> Phone Number</label>
+                    <div id="phone-invalid-feedback" class="invalid-feedback" hidden>
+                      Please enter a valid phone number.
+                    </div>
+                </div>
+            </div>
+            <h2>Repair Location</h2>
+            <div class="row g-3" id="repair-loc">
+                <div class="col-md-4">
+                    <label for="repair-building"><span style="color: red;">*</span> Building</label>
+                    <select class="form-select required" aria-label="Select building" id="repair-building" required = "true" onchange="(propogateFloors())">
+                        <option selected>--Select--</option>
+                        <option value="Anderson">Anderson</option>
+                        <option value="Bausch & Lomb">Bausch & Lomb</option>
+                        <option value="Burton">Burton</option>
+                        <option value="Carlson">Carlson</option>
+                        <option value="Chambers">Chambers</option>
+                        <option value="Computer Studies">Computer Studies</option>
+                        <option value="Crosby">Crosby</option>
+                        <option value="Dewey">Dewey</option>
+                        <option value="Douglass">Douglass</option>
+                        <option value="Fairchild">Fairchild</option>
+                        <option value="Fauver Stadium">Fauver Stadium</option>
+                        <option value="Gale">Gale</option>
+                        <option value="Gavett">Gavett</option>
+                        <option value="Genesee">Genesee</option>
+                        <option value="Gilbert">Gilbert</option>
+                        <option value="Gleason">Gleason</option>
+                        <option value="Goergen Athletic Center">Goergen Athletic Center</option>
+                        <option value="Goergen">Goergen</option>
+                        <option value="Harkness">Harkness</option>
+                        <option value="Hoeing">Hoeing</option>
+                        <option value="Hopeman">Hopeman</option>
+                        <option value="Hoyt">Hoyt</option>
+                        <option value="Hutchinson">Hutchinson</option>
+                        <option value="Hylan">Hylan</option>
+                        <option value="Interfaith Chapel">Interfaith Chapel</option>
+                        <option value="Kendrick">Kendrick</option>
+                        <option value="Lattimore">Lattimore</option>
+                        <option value="LeChase">LeChase</option>
+                        <option value="Lovejoy">Lovejoy</option>
+                        <option value="Meliora">Meliora</option>
+                        <option value="Morey">Morey</option>
+                        <option value="Munro">Munro</option>
+                        <option value="O'Brien">O'Brien</option>
+                        <option value="Rettner">Rettner</option>
+                        <option value="Rush Rhees">Rush Rhees</option>
+                        <option value="Sage">Sage</option>
+                        <option value="Schlegel">Schlegel</option>
+                        <option value="Simon">Simon</option>
+                        <option value="Slater">Slater</option>
+                        <option value="Sloan Performing Arts Center">Sloan Performing Arts Center</option>
+                        <option value="Spurrier">Spurrier</option>
+                        <option value="Strong Auditorium">Strong Auditorium</option>
+                        <option value="Sysan B. Anthony">Susan B. Anthony</option>
+                        <option value="Taylor">Taylor</option>
+                        <option value="Tiernan">Tiernan</option>
+                        <option value="Todd">Todd</option>
+                        <option value="University Health Service">University Health Service</option>
+                        <option value="Wallis">Wallis</option>
+                        <option value="Wegmans">Wegmans</option>
+                        <option value="Wilder">Wilder</option>
+                        <option value="Wilmot">Wilmot</option>
+                        <option value="Wilson Commons">Wilson Commons</option>
+                      </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="repair-floor">Floor</label>
+                    <select class="form-select" aria-label="Select floor number" id="repair-floor">
+                        <option selected>--</option>   
+                      </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="repair-room">Room</label>
+                    <input type="text" class="form-control" id="repair-room">
+                </div>
+            </div>
+            <h2>Report Details</h2>
+            <h3><span style="color: red;">*</span> What is the issue?</h3>
+            <div id="details-radio">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="report-details" id="push-door-button" required = "true">
+                    <label class="form-check-label" for="push-door-button">
+                    Push Door Button
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="report-details" id="elevator">
+                    <label class="form-check-label" for="elevator">
+                    Elevator
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="report-details" id="ramp">
+                    <label class="form-check-label" for="ramp">
+                    Ramp
+                    </label>
+                </div>
+            </div>
+            
+            <h3>Are there any other details you want to provide?</h3>
+            <div id="report-details-chips">
+                <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Door Does Not Fully Open</button>
+                <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Located Outside</button>
+                <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Door Opens Too Slow</button>
+                <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Mechanical Obstruction</button>
+                <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Hard to Reach Button</button>
+                <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Door Opens Too Fast</button>
+            </div>
+            <button class="btn btn-primary" type="submit" onclick="submitRequest(event)" id="submit-report" data-bs-toggle="modal" data-bs-target="#request-confirmation">Submit</button>
+        </form>
+    </div> 
+
+    <!-- Confirmation pop up -->
+    <div class="modal fade" id="request-confirmation" tabindex="-1" aria-labelledby="report confirmation pop-up" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmation-label">Report Confirmation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3>Reporter Email:</h3>
+            <p id="display-email"></p>
+            <h3>Reporter Phone Number:</h3>
+            <p id="display-phone"></p>
+            <h3>Date: </h3><span><p id="display-date"></p></span>
+            <p id="display-summary">You reported a <span class="summary-input" id="display-feature"></span> in <span class="summary-input" id="display-building"></span> at <span class="summary-input" id="display-site">River Campus (site)</span></p>
+            <p>A copy of this report has been sent to the email address you provided. Keep in mind Our Access only facilitates these reports that will then be processed by University Facilities & Services. To get in touch with University Facilities & Services, please see the helpful links below.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/service-request.js"></script>   
+  </body>
+  <footer>&copyOur Access 2023</footer>
+  </html>
