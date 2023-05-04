@@ -50,7 +50,7 @@
         </div>
 
         <p><strong>Note: </strong>Fields marked with a <span style="color: red;">*</span> are <strong>required </strong>fields.</p>
-        <form action="" id="report-form">
+        <form  method="post" action="form-processor.php" id="report-form">
             <h2>Reporter Information</h2>
             <div class="row g-3" id="reporter-info">
                 <div class="form-floating col-md-4">
@@ -175,7 +175,7 @@
                 <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Hard to Reach Button</button>
                 <button type="button" class="btn btn-light" data-bs-toggle="button" autocomplete="off">Door Opens Too Fast</button>
             </div>
-            <button class="btn btn-primary" type="submit" onclick="submitRequest(event)" id="submit-report" data-bs-toggle="modal" data-bs-target="#request-confirmation">Submit</button>
+            <button class="btn btn-primary" type="submit" id="submit-report" data-bs-toggle="modal" data-bs-target="#request-confirmation">Submit</button>
         </form>
     </div> 
 
